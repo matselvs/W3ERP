@@ -1,0 +1,153 @@
+.Ttable {
+  border-collapse: collapse;
+  height: 360px;
+  width: 100%;
+  border-radius: 16px;
+  margin-top: 30px;
+  font-size: small;
+}
+
+.Pcontainer {
+  padding: 20px 10px;
+  border-radius: 16px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  height: auto;
+  width: 35%;
+  margin-left: 22%;
+  margin-top: -66%;
+  position: absolute;
+}
+
+th {
+  background-color: #001C98;
+  color: white;
+  font-weight: 200;
+  height: 40px;
+}
+
+th:nth-of-type(1) {
+  border-top-left-radius: 16px;
+  border-bottom-right-radius: 0;
+}
+
+th:nth-of-type(3) {
+  border-top-right-radius: 16px;
+  border-bottom-left-radius: 0;
+}
+
+th:nth-of-type(2) {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  width: 30%
+}
+
+tr:nth-of-type(even) {
+  background-color: #F5F5F5;
+}
+
+tr:nth-of-type(odd) {
+  background-color: white;
+}
+
+.caption {
+  font-weight: bold;
+  margin-top: 5px;
+  margin-left: 10px;
+  position: absolute;
+  margin-top: -30px;
+  margin-left: 60px;
+}
+
+.quadradinho{
+  height: 50px;
+  width: 50px;
+  border-radius: 8px;
+  background: #C5CFFF;
+  margin-top: 5px;
+}
+
+.quadradinho img {
+ margin-top: 25%;
+ margin-left: 25%; 
+ 
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.buttons{
+  border-radius: 8px;
+  border: solid #ccc 1px;
+  background: #F5F5F5;
+  padding-bottom: 2px;
+  padding-left: 1px;  
+  padding-right: 1px; 
+  position: absolute;
+  margin-left: 230px;
+  margin-top: -30px;
+}
+
+.button {
+  display: inline-block;
+  font-size: 12px;
+  font-family: sans-serif;
+  font-weight: 300;
+  color: #fff;
+  background-color: #000;
+  cursor: pointer;
+  border-radius: 4px;
+  border: none;
+  width: 89px;
+  height: 22px;
+}
+
+.button:hover {
+  background-color: #ccc;
+  color: #000;
+}
+
+
+.button.up.active {
+  background-color: #00C247; 
+}
+
+
+.button.down.active {
+  background-color: #FF3333; 
+}
+
+
+.button.up:not(.active),
+.button.down:not(.active) {
+  background-color: #F5F5F5;
+  cursor: pointer;
+  color: #9E9E9E;
+}
+
+
+.arrow-cell i {
+  font-size: 14px;
+  color: #757575; 
+}
+
+.arrow-cell i:hover {
+  color: #7682C1;
+}
+
+th,
+td {
+  vertical-align: middle;
+  text-align: center; 
+}
+
+.arrow-cell {
+  width: 30px;
+  text-align: center;
+  cursor: pointer;
+  height: 40px;
+  line-height: auto;
+}

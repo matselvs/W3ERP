@@ -1,0 +1,154 @@
+.dashboard-container {
+  position: absolute;
+  width: 950px;
+  height: 222px;
+  top: 132px;
+  left: 276px;
+  border-radius: 24px;
+  background-color: #001C98;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.dashboard-heading {
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.card-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  font-size: small;
+}
+
+.dashboard-card {
+  width: 210px;
+  height: 104px;
+  background: rgb(0, 0, 95);
+  color: aliceblue;
+  border-radius: 18px;
+}
+
+.chart-container {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  margin-top: 35px;
+  margin-left: 10px;
+}
+
+/* Update the styles for the card headings */
+.cardtitulo {
+  margin-left:65px;
+  margin-top: 20px;
+  font-size: 11px;
+  position: absolute;
+}
+
+/* Update the styles for the specific words in the card headings */
+.dashboard-card .bold-text {
+  font-weight: bold;
+}
+
+h2{
+  margin-left: 10px;
+}
+.percentage-text1 {
+  position: absolute;
+  font-size: 14px;
+  color: #fff;
+  background: #00C247;
+  margin-top: -30px;
+  margin-left: 120px;
+  border-radius: 12px;
+  font-size: 11px;
+  padding-left: 6px;
+  padding-right: 6px;
+}
+
+.percentage-text2 {
+  position: absolute;
+  font-size: 14px;
+  color: #fff;
+  background: #FF3333;
+  margin-top: -30px;
+  margin-left: 120px;
+  border-radius: 12px;
+  font-size: 11px;
+  padding-left: 6px;
+  padding-right: 6px;
+}
+
+.percentage-text3 {
+  position: absolute;
+  font-size: 14px;
+  color: #fff;
+  background: #00C247;
+  margin-top: -30px;
+  margin-left: 120px;
+  border-radius: 12px;
+  font-size: 11px;
+  padding-left: 6px;
+  padding-right: 6px;
+}
+
+.percentage-text4 {
+  position: absolute;
+  font-size: 14px;
+  color: #fff;
+  background: #FF3333;
+  margin-top: -30px;
+  margin-left: 120px;
+  border-radius: 12px;
+  font-size: 11px;
+  padding-left: 6px;
+  padding-right: 6px;
+}
+
+.numerocard{
+  position: absolute;
+   margin-top: -35px;
+  margin-left: 70px;
+  font-weight: 400;
+}
+
+.numerocard2{
+  position: absolute;
+   margin-top: -35px;
+  margin-left: 70px;
+  font-weight: 400;
+}
+
+.numerocard3{
+  position: absolute;
+   margin-top: -35px;
+  margin-left: 70px;
+  font-weight: 400;
+}
+
+.numerocard4{
+  position: absolute;
+   margin-top: -35px;
+  margin-left: 70px;
+  font-weight: 400;
+}
+
+.botãotempo{
+  border: none;
+  height: 30px;
+  padding: 6px;
+  position: absolute;
+  margin-left: 790px;
+  margin-top: -45px;
+  border-radius: 6px;
+  color: #424242;
+  cursor: pointer;
+}
+.botãotempo:focus {
+  outline: none;
+  box-shadow: none;
+}
+
