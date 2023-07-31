@@ -2,7 +2,6 @@ import React from 'react';
 import LoginForm from '../components/LoginForm';
 import "../styles/LoginPage.css";
 
-
 const LoginPage: React.FC = () => {
   return (
     <div className="login-page">
