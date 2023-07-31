@@ -2,21 +2,18 @@ import React, { useState, useEffect } from "react";
 import { CircularProgressbar } from "react-circular-progressbar";
 import "react-circular-progressbar/dist/styles.css";
 import "../styles/DashboardContainer.css";
-import { DashboardData, Dashdata } from "../service/dashData";
+import { Dashdata } from "../service/dashData";
 
 const DashboardContainer: React.FC = () => {
-  const [selectedTimePeriod, setSelectedTimePeriod] =
-    useState<string>("Este Mês");
-  const [produtosEmAltaPercentage, setProdutosEmAltaPercentage] =
+
+  
     useState<number>(0);
-  const [produtosEmBaixaPercentage, setProdutosEmBaixaPercentage] =
+  const [clientesEmAltaPercentage ] =
     useState<number>(0);
-  const [clientesEmAltaPercentage, setClientesEmAltaPercentage] =
-    useState<number>(0);
-  const [clientesEmBaixaPercentage, setClientesEmBaixaPercentage] =
+  const [clientesEmBaixaPercentage] =
     useState<number>(0);
 
-  const [dashboardData, setDashboarData] = useState<DashboardData | null>(null);
+  
 
   useEffect(() => {
     async function dados() {
@@ -25,7 +22,7 @@ const DashboardContainer: React.FC = () => {
         const dataFinal = "";
         const result = await Dashdata(dataInicial, dataFinal);
         console.log(result);
-        setDashboarData(result);
+        (result);
       } catch (error) {
         console.error(error)
       }
@@ -33,17 +30,13 @@ const DashboardContainer: React.FC = () => {
     dados();
   }, []);
 
-  const handleTimePeriodChange = (
-    event: React.ChangeEvent<HTMLSelectElement>
-  ) => {
-    setSelectedTimePeriod(event.target.value);
-  };
+ 
 
   return (
     <div className="dashboard-container">
       <h2 className="dashboard-heading">Dashboard</h2>
       <div className="dropdown">
-        <select className="botãotempo" onChange={handleTimePeriodChange}>
+        <select className="botãotempo">
           <option value="Este Mês">Mostrar: Este Mês</option>
           <option value="Este Ano">Mostrar: Este Ano</option>
         </select>

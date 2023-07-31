@@ -9,8 +9,8 @@ export type Client = {
 };
 
 export const GetClientStatus = async (
-  id: number,
-  classificacao: 'EM_ALTA' | 'EM_BAIXA'
+  _id?: number,
+  classificacao?: 'EM_ALTA' | 'EM_BAIXA'
 ): Promise<Client[]> => {
   try {
     const token = localStorage.getItem('token');

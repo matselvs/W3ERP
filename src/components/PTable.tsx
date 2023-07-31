@@ -9,7 +9,7 @@ export type Product = {
 };
 
 export const GetProductStatus = async (
-  id: number,
+  _id: number,
   classificacao: 'EM_ALTA' | 'EM_BAIXA'
 ): Promise<Product[]> => {
   try {
